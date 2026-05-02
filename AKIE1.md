@@ -3,7 +3,9 @@ Firmen-Beispiel mit Lambda-Ausdruck
 
 
 
-Ergänzen Sie die Klasse Firma um zwei Methoden namens sortNachOrt und sortNachPlz, um die Person-Objekte nach Ort und nach Postleitzahl zu sortieren. Verwenden Sie dafür die generische sort-Methode static <T> void sort(T[] a, Comparator<? super T> c) aus der Klasse java.util.Arrays.
+Ergänzen Sie die Klasse Firma um zwei Methoden namens sortNachOrt und sortNachPlz, um die Person-Objekte nach Ort und nach Postleitzahl zu sortieren.
+
+Verwenden Sie dafür die generische sort-Methode static <T> void sort(T[] a, Comparator<? super T> c) aus der Klasse java.util.Arrays.
 
 Programmieren Sie einen Lambda-Ausdruck um den zweiten Parameter zu erzeugen. Nach jeder sort-Anweisung geben Sie das Array zum Bildschirm aus und kontrollieren Sie, ob richtig sortiert wurde. Orientieren Sie sich dabei an der Datei IFigurTest.java in Kapitel 3.
 

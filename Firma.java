@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class Firma {
 
@@ -165,6 +167,16 @@ public class Firma {
 
     public Person[] getAllePersonen() {
         return this.allePersonen;
+    }
+
+
+    public void sortByPlz(){
+        Arrays.sort(this.allePersonen, (p1, p2) -> p1.getPLZ().compareTo(p2.getPLZ()));
+    } 
+
+
+    public void sortNachOrt () {
+        Arrays.sort(allePersonen, (p1, p2) -> p1.getOrt().compareTo(p2.getOrt()));
     }
 
 }

@@ -73,6 +73,25 @@ public abstract class Person {
      * 
      * @return die Adresse als ein Array von String-Objekte
      */
+    
+    
+    /**
+     * Die Methode gibt die PLZ eines Person-Objekts zurück.
+     * 
+     * @return die PLZ
+     */
+    public String getPLZ() {
+        return this.plz;
+    }
+
+    /**
+     * Die Methode gibt den Ort einer Person zurück
+     * 
+     * @return der Ort 
+     */
+    public String getOrt(){
+        return this.ort; 
+    }
 
     public String[] getAdresse() {
         String[] adresse = new String[4];
@@ -97,15 +116,7 @@ public abstract class Person {
     @Override
     public String toString() {
    
-        return  this.vorname + " " + this.nachname +  "\n" + Arrays.toString(this.getAdresse());
-        
-        
-
-
-
+        return Arrays.toString(this.getAdresse());
     }
-
-
-
 
 }
