@@ -58,4 +58,9 @@ public class Angestellte extends Person {
         }
         return anrede;
     }
+
+    @Override 
+    public String toString(){
+        return this.getAnrede() + super.toString() + " Gehalt: " + gehalt; 
+    }
 }

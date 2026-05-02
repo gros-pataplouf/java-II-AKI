@@ -84,4 +84,10 @@ public class Kunde extends Person {
         }
         return anrede;
     }
+
+    @Override
+    public String toString() {
+        return this.getAnrede() +  "\n" + super.toString() + "\n" + this.kundennummer;
+    }
+
 }

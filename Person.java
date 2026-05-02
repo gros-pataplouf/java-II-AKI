@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public abstract class Person {
 
     // Instanzvariablen
@@ -91,5 +93,19 @@ public abstract class Person {
     public String getName() {
         return vorname + " - " + nachname;
     }
+
+    @Override
+    public String toString() {
+   
+        return  this.vorname + " " + this.nachname +  "\n" + Arrays.toString(this.getAdresse());
+        
+        
+
+
+
+    }
+
+
+
 
 }
